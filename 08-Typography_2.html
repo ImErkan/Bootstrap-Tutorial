@@ -1,16 +1,110 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="container-fluid">
-      <p class="lead"></p>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <p class="lead">A Very Stylish Paragraph</p>
+    <p>A Very Stylish Paragraph</p>
+    <p class="text-start">Align left</p>
+    <p class="text-center">Align center</p>
+    <p class="text-end">Align right</p>
+    <p class="text-break">
+      fsdfdsfsdgdsgsdgmdkgmdskgdskgndkgndskgnsdgkdsngkdsngkdsngksdngksdngkdsngosgndsognsdogdugdugnsodgnsdgsdgnsuodgdngndsg
+    </p>
+  </div>
+  <!-- Text decoration -->
+  <div class="container my-2 p-3">
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="text-decoration-underline">Lorem ipsum dolor sit amet.</p>
+    <p class="text-decoration-line-through">Lorem ipsum dolor sit amet.</p>
+    <a href="#" class="text-decoration-none text-success">Home</a>
+    <a href="#">About us </a>
+    <a href="#">Profile </a>
+    <a href="#" class="text-decoration-none">contact</a>
+    <p class="text-lovercase">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="text-uppercase">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="text-capitalize">Lorem ipsum dolor sit amet consectetur.</p>
+    <p><abbr title="World Health Organization">WHO</abbr>'s center is in Geneva.</p>
+    <p><abbr title="World Health Organization" class="initialism">WHO</abbr>'s center is in Geneva.</p>
+  </div>
+  <!-- font size -->
+  <div class="container my-2 p-3">
+    <p class="fs-1 ">Font Size 1</p>
+    <p class="fs-2 ">Font Size 2</p>
+    <p class="fs-3 ">Font Size 3</p>
+    <p class="fs-4 ">Font Size 4</p>
+    <p class="fs-5 ">Font Size 5</p>
+    <p class="fs-6 ">Font Size 6</p>
+    <p class="fs-6 ">Font Size 6</p>
+    <!-- font weight -->
+    <p class="fs-3 fw-bold">Font weight bold</p>
+    <p class="fs-3 fw-bolder">Font weight bolder 2</p>
+    <p class="fs-3 fw-normal">Font weight normal</p>
+    <p class="fs-3 fw-light">Font weight light</p>
+    <p class="fs-3 fw-lighter">Font weight lighter</p>
+    <p class="fs-3 fst-normal">Font style normal</p>
+    <p class="fs-3 fst-italic">Font style italic</p>
+  </div>
+  <!-- line height -->
+  <div class="container my-2 p-3">
+    <p class="lh-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At sit, facilis doloremque quae vel
+      ducimus molestiae magnam delectus! Possimus ipsum eius voluptatum architecto porro accusamus. Ullam esse qui ab
+      molestiae.</p>
+    <p class="lh-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo ad itaque fugit dolores dolorem iure
+      exercitationem ipsam velit possimus! Magni deserunt quibusdam distinctio officia doloribus. Ut, ducimus
+      asperiores. Ex, impedit.</p>
+    <p class="lh-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur culpa excepturi quasi tenetur
+      recusandae doloremque error et beatae totam ipsam voluptatibus blanditiis modi facilis, ipsa provident mollitia
+      laborum? Soluta, quod?</p>
+    <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, totam commodi! Soluta, recusandae
+      autem, laudantium sint consectetur repellendus necessitatibus molestiae voluptate deserunt impedit sapiente dolore
+      exercitationem. Temporibus doloribus quia pariatur.</p>
+  </div>
+  <!-- fony monospace -->
+  <div class="container my-2 p-3">
+    <p class="font-monospace">Lorem ipsum dolor sit amet consectetur    adipisicing elit. Libero ad beatae rerum error
+    harum fuga illum quae, placeat, sed minus ipsa, tempora iure laboriosam itaque nihil pariatur perspiciatis earum
+    ex.</p>
+  </div>
+  <!-- text classes in links -->
+  <div class="container my-2 p-3">
+    <p class="muted">this color <a href="#" class="text-reset"> is applied to this reset link</a></p>
+    <div class="text-muted">
+      this color <a href="#" > is applied to this reset link</a>
     </div>
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  </body>
+  </div>
+  <!-- List-unstyled class -->
+  <ul class="list-unstyled">
+    <li>Node JS</li>
+    <li>PHP</li>
+    <li>Front End
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+      </ul>
+    </li>
+  </ul>
+  <!-- List-inline -->
+  <ul class="list-inline">
+    <li class="list-inline-item">Home</li>
+    <li class="list-inline-item">About Us</li>
+    <li class="list-inline-item">Profile</li>
+    <li class="list-inline-item">Contact</li>
+  </ul>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
