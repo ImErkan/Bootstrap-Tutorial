@@ -1,14 +1,140 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
   </head>
+
   <body>
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- ?width classes -->
+    <div class="container my-2">
+      <div class="row">
+        <div class="col-12 bg-dark text-white text-center py-3">
+          <div class="w-25 bg-warning p-2 mb-3">W-25</div>
+          <div class="w-50 bg-warning p-2 mb-3">W-50</div>
+          <div class="w-75 bg-warning p-2 mb-3">W-75</div>
+          <div class="w-100 bg-warning p-2 mb-3" style="width: 100px">
+            W-100
+          </div>
+          <div class="w-auto bg-warning p-2 mb-3">auto</div>
+          <div class="w-mw-100 bg-warning p-2 mb-3" style="width: 100px">
+            MW-100
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ?Height classes -->
+    <div class="container my-2">
+      <div class="row">
+        <div class="col-12 bg-dark text-white py-3" style="height: 500px">
+          <div class="h-25 bg-warning px-4 mb-3 d-inline-block">h-25</div>
+          <div class="h-50 bg-warning px-4 mb-3 d-inline-block">h-50</div>
+          <div class="h-75 bg-warning px-4 mb-3 d-inline-block">h-75</div>
+          <div
+            class="h-100 bg-warning px-4 mb-3 d-inline-block"
+            style="width: 100px"
+          >
+            h-100
+          </div>
+          <div class="h-auto bg-warning px-4 mb-3 d-inline-block">auto</div>
+          <div
+            class="h-mw-100 bg-warning px-4 mb-3 d-inline-block"
+            style="width: 100px"
+          >
+            mh-100
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ?viewport witdh  & height-->
+    <!-- <div class="vw-100 bg-dark text-white p-3">viewport width 100</div>
+    <div class="vh-100 bg-danger text-white p-3">viewport height 100</div> -->
+
+    <!-- ?align clasess > -->
+    <!-- !works only inline elemnts -->
+    <div class="container my-2">
+      <div class="row d-inline">
+        <span class="align-top">Top</span>
+        <span class="align-baseline">Baseline</span>
+        <span class="align-middle">Middle</span>
+        <span class="align-bottom">bottom</span>
+        <span class="align-text-top">text-top</span>
+        <span class="align-text-bottom">text-bottom</span>
+      </div>
+    </div>
+
+    <!-- ?colorin links -->
+    <div class="container my-2">
+      <div class="row">
+        <div class="col-12">
+          <a href="#" class="link-primary">Primary</a>
+          <a href="#" class="link-secondary">Secondary</a>
+          <a href="#" class="link-warning">Warning</a>
+          <a href="#" class="link-danger">Danger</a>
+          <a href="#" class="link-success">Success</a>
+          <a href="#" class="link-info">Info</a>
+          <a href="#" class="link-light">Light</a>
+          <a href="#" class="link-dark">dark</a>
+        </div>
+      </div>
+    </div>
+
+    <!--  ?text Truncation -->
+    <div class="container my-2">
+      <div class="row">
+        <div class="col-4 text-truncate">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+          quos saepe ex consequuntur eligendi quidem consequatur doloribus enim
+          perferendis eaque rem quis fuga aperiam explicabo, optio quam, in
+          aspernatur tempora quo, quibusdam a sint ullam. Incidunt sapiente quo
+          tempora laboriosam.
+        </div>
+      </div>
+      <span class="text-truncate d-inline-block" style="max-width: 270px"
+        >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis,
+        ducimus?</span
+      >
+      <!-- ?vertical Rule class -->
+      <div class="vr"></div>
+    </div>
+
+    <!-- respnsive videos -->
+    <div class="container my-2">
+      <div class="row">
+        <div class="col-6">
+          <div class="ratio ratio-1x1 mb-4">
+            <iframe  src="https://www.youtube.com/embed/tMUtzjSkjnY?list=RDtMUtzjSkjnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="ratio ratio-4x3 mb-4">
+            <iframe  src="https://www.youtube.com/embed/tMUtzjSkjnY?list=RDtMUtzjSkjnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="ratio ratio-16x9 mb-4">
+            <iframe  src="https://www.youtube.com/embed/tMUtzjSkjnY?list=RDtMUtzjSkjnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="ratio ratio-21x9 mb-4">
+            <iframe  src="https://www.youtube.com/embed/tMUtzjSkjnY?list=RDtMUtzjSkjnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
