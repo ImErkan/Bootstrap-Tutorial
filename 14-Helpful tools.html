@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+  <!-- ?float -->
+  <div class="container my-2 p-3">
+    <div class="clear-fix mb-5">
+      <span class="float-start float-xl-end bg-dark text-white p-2">Left Float</span>
+      <span class="float-end bg-danger text-white p-2">Right Float</span>
+    </div>
+
+    <span class="float-none bg-info text-white p-2">None float</span>
+  </div>
+  <!-- ?user select  -->
+  <div class="container-fluid my-2 p-3">
+    <div class="row">
+      <div class="col-md-6">
+        <p class="user-select-all">Select all when user clicks</p>
+        <p class="user-select-auto">Default</p>
+        <p class="user-select-none">DCould not be selected when clicked.</p>
+        <p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">This link</a></p>
+        <!-- we block the link selection by presses tab key with (tabindex="-1")-->
+        <p>You can click<a href="#" class="pe-auto">This link</a></p>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- ?Opacity -->
+  <div class="container-fluid my-2 p-3">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="opacity-100 " style="width: 8rem; height:8rem; background-color:burlywood">User 100</div>
+        <div class="opacity-75" style="width: 8rem; height:8rem; background-color:burlywood">User 75</div>
+        <div class="opacity-50" style="width: 8rem; height:8rem; background-color:burlywood">User 50</div>
+        <div class="opacity-25" style="width: 8rem; height:8rem; background-color:burlywood">User 25</div>
+      </div>
+    </div>
+  </div>
+  <!-- ?shadows -->
+  <div class="container-fluid my-2 p-3">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="shadow-none p-3 mb-5 bg-light rounded">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Unde rerum recusandae accusantium numquam sapiente molestiae ullam laboriosam. Tenetur culpa ipsum dolorum
+          atque nesciunt deserunt sed explicabo animi veritatis in consectetur, quibusdam perspiciatis aliquid quas
+          corrupti eaque nostrum dignissimos qui. Adipisci, ad illum. Beatae nulla dicta quis sint voluptas cumque
+          pariatur.</div>
+        <div class="shadow-sm p-3 mb-5 bg-light rounded">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+          rerum recusandae accusantium numquam sapiente molestiae ullam laboriosam. Tenetur culpa ipsum dolorum atque
+          nesciunt deserunt sed explicabo animi veritatis in consectetur, quibusdam perspiciatis aliquid quas corrupti
+          eaque nostrum dignissimos qui. Adipisci, ad illum. Beatae nulla dicta quis sint voluptas cumque pariatur.
+        </div>
+        <div class="shadow p-3 mb-5 bg-light rounded">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+          rerum recusandae accusantium numquam sapiente molestiae ullam laboriosam. Tenetur culpa ipsum dolorum atque
+          nesciunt deserunt sed explicabo animi veritatis in consectetur, quibusdam perspiciatis aliquid quas corrupti
+          eaque nostrum dignissimos qui. Adipisci, ad illum. Beatae nulla dicta quis sint voluptas cumque pariatur.
+        </div>
+        <div class="shadow-lg p-3 mb-5 bg-light rounded">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+          rerum recusandae accusantium numquam sapiente molestiae ullam laboriosam. Tenetur culpa ipsum dolorum atque
+          nesciunt deserunt sed explicabo animi veritatis in consectetur, quibusdam perspiciatis aliquid quas corrupti
+          eaque nostrum dignissimos qui. Adipisci, ad illum. Beatae nulla dicta quis sint voluptas cumque pariatur.
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ?overflow -->
+  <div class="container my-2 p-3 text-dark">
+    <div class="row">
+      <div class="col-md-3 bg-primary overflow-auto" style="height: 6rem;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui numquam voluptatum, culpa deleniti ipsum non mollitia reiciendis, praesentium aperiam, earum modi sunt deserunt rem molestiae dolorum ducimus sapiente illo totam?
+      </div>
+      <div class="col-md-3 bg-danger overflow-hidden" style="height: 6rem;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui numquam voluptatum, culpa deleniti ipsum non mollitia reiciendis, praesentium aperiam, earum modi sunt deserunt rem molestiae dolorum ducimus sapiente illo totam?
+      </div>
+      <div class="col-md-3 bg-warning overflow-visible" style="height: 6rem;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui numquam voluptatum, culpa deleniti ipsum non mollitia reiciendis, praesentium aperiam, earum modi sunt deserunt rem molestiae dolorum ducimus sapiente illo totam?
+      </div>
+      <div class="col-md-3 bg-success overflow-scroll" style="height: 6rem;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui numquam voluptatum, culpa deleniti ipsum non mollitia reiciendis, praesentium aperiam, earum modi sunt deserunt rem molestiae dolorum ducimus sapiente illo totam?
+      </div>
+    </div>
+  </div>
+  <!-- ?visbilty -->
+  <div class="container my-2 p-3">
+    <div class="row">
+      <div class="col-md-12 my-5 bg-info visible" style="height: 6rem;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui numquam voluptatum, culpa deleniti ipsum non mollitia reiciendis, praesentium aperiam, earum modi sunt deserunt rem molestiae dolorum ducimus sapiente illo totam?
+      </div>
+      <!-- 
+        d-none removes elements for everyone
+        invisble removes elements for user, but not for other elements. they see invisble class content and behave like that content as if there is.
+      -->
+      <div class="col-md-12 bg-danger invisible" style="height: 6rem;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui numquam voluptatum, culpa deleniti ipsum non mollitia reiciendis, praesentium aperiam, earum modi sunt deserunt rem molestiae dolorum ducimus sapiente illo totam?
+      </div>
+      <div class="col-md-12  bg-warning " style="height: 6rem;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui numquam voluptatum, culpa deleniti ipsum non mollitia reiciendis, praesentium aperiam, earum modi sunt deserunt rem molestiae dolorum ducimus sapiente illo totam?
+      </div>
+      <!-- Visually hidden is only visble for screen readers. -->
+      <div class="col-md-12  bg-warning visually-hidden" style="height: 6rem;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui numquam voluptatum, culpa deleniti ipsum non mollitia reiciendis, praesentium aperiam, earum modi sunt deserunt rem molestiae dolorum ducimus sapiente illo totam?
+      </div>
+    
+    </div>
+  </div>
+  
+
+
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
