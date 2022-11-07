@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Button Groups</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <div class="container my-5 p-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="btn-group" role="group" aria-label="Settings">
+            <button type="button" class="btn btn-success">Left</button>
+            <button type="button" class="btn btn-danger">Center</button>
+            <button type="button" class="btn btn-warning">Right</button>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="btn-group" role="group" aria-label="Chechbox Button Group">
+            <input type="checkbox" class="btn-check" name="bsRadio" id="bsCheck1" autocomplete="off">
+            <label class="btn btn-outline-danger" for="bsCheck1">Checkbox1</label>
+            <input type="checkbox" class="btn-check" name="bsRadio" id="bsCheck2" autocomplete="off">
+            <label class="btn btn-outline-danger" for="bsCheck2">Checkbox2</label>
+            <input type="checkbox" class="btn-check" name="bsRadio" id="bsCheck3" autocomplete="off">
+            <label class="btn btn-outline-danger" for="bsCheck3">Checkbox3</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="btn-group" role="group" aria-label="Radio Button Group">
+            <input type="radio" class="btn-check" id="bsRadio1" autocomplete="off">
+            <label class="btn btn-outline-danger" for="bsRadio1">Checkbox1</label>
+            <input type="radio" class="btn-check" id="bsRadio2" autocomplete="off">
+            <label class="btn btn-outline-danger" for="bsRadio2">Checkbox2</label>
+            <input type="radio" class="btn-check" id="bsRadio3" autocomplete="off">
+            <label class="btn btn-outline-danger" for="bsRadio3">Checkbox3</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="row">
+          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar Button Group">
+            <div class="btn-group me-2" role="group" aria-label="First Group">
+              <button type="button" class="btn btn-success">1</button>
+              <button type="button" class="btn btn-success">2</button>
+              <button type="button" class="btn btn-success">3</button>
+            </div>
+            <div class="btn-group me-2" role="group" aria-label="Second Group">
+              <button type="button" class="btn btn-warning">4</button>
+              <button type="button" class="btn btn-warning">5</button>
+              <button type="button" class="btn btn-warning">6</button>
+              <button type="button" class="btn btn-warning">7</button>
+            </div>
+            <div class="btn-group me-2" role="group" aria-label="Third Group">
+              <button type="button" class="btn btn-danger">8</button>
+              <button type="button" class="btn btn-danger">9</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="btn-group btn-group-lg" role="group" aria-label="Settings">
+            <button class="btn btn-danger" type="button">Large button</button>
+            <button class="btn btn-dark" type="button">Default button</button>
+            <button class="btn btn-warning" type="button">Small button</button>
+          </div>
+          <hr>
+          <div class="btn-group" role="group" aria-label="Settings">
+            <button class="btn btn-danger" type="button">Large button</button>
+            <button class="btn btn-dark" type="button">Default button</button>
+            <button class="btn btn-warning" type="button">Small button</button>
+          </div>
+          <hr>
+          <div class="btn-group btn-group-sm " role="group" aria-label="Settings">
+            <button class="btn btn-danger" type="button">Large button</button>
+            <button class="btn btn-dark" type="button">Default button</button>
+            <button class="btn btn-warning" type="button">Small button</button>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-12">
+              <div class="btn-group" role="group" aria-label="Dropdown Button group">
+                <button type="button" class="btn btn-success"> Dropdown 1</button>
+                <button type="button" class="btn btn-primary"> Dropdown 2</button>
+                <div class="btn-group" role="group" >
+                  <button type="button" id="myDropdown" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+                  <ul class="dropdown-menu" aria-labelledby="myDropdown">
+                    <li><a href="#" class="dropdown-item">Home</a></li>
+                    <li><a href="#" class="dropdown-item">About Us</a></li>
+                    <li><a href="#" class="dropdown-item">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+
+
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
