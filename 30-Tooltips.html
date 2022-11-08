@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="top" title="Erkan Kose"> Top tooltip</button>
+          <!-- ?for screen readers -->
+          <!-- <div class="tooltip bs-tooltip-top" role="tooltip">
+            <div class="tooltip-arrow"></div>
+            <div class="tooltip-inner">Erkan Kose</div>
+          </div> -->
+          <button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" > Right tooltip</button>
+          <button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Erkan Kose"> Bottom tooltip</button>
+          <button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="left" title="Erkan Kose"> Left tooltip</button>
+          <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<em>bootstrap</em> Html with tooltip  <u> with</u> <strong> Erkan Kose </strong> "> Bootstrap</button>
+          <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="Unclickable">
+            <button type="button" class="btn btn-primary" disabled> Passive Button</button>
+          </span>
+        </div> 
+        
+      </div>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script>
+      var toollist = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      var tooltiplist = toollist.map(function(x){
+        return new bootstrap.Tooltip(x,{
+          delay:{"show":500,"hide":500},
+          html:true,
+          // placement:'top'
+          title:'asfdafaf',
+          offset:[0.15]
+        });
+      });
+    </script>
+  </body>
+</html>
