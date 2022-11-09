@@ -1,37 +1,114 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  </head>
-  <body>
-    <div class="container my-5">
-      <div class="row">
-        <div class="col my-4">
-          <ul class="nav nav-tabs nav-fill" role="tablist">
-            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
-            <li class="nav-item"><a href="#" class="nav-link disabled" tabindex="-1">disabled link</a></li>
-            <li class="nav-item"><a href="#" role="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-              <ul class="dropdown-menu list-inline ">
-                <li class="list-inline-item"><a href="#" class="dropdown-item">1</a></li>
-                <div class="vr"></div>
-                <li class="list-inline-item"><a href="#" class="dropdown-item">2</a></li>
-                <li class="list-inline-item"><a href="#" class="dropdown-item">3</a></li>                
-                <li class="list-inline-item"><a href="#" class="dropdown-item">4</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <!--?col ends-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Dynamic_tabs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col my-4">
+        <ul class="nav nav-tabs nav-fill" role="tablist">
+          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+          <li class="nav-item"><a href="#" class="nav-link disabled" tabindex="-1">disabled link</a></li>
+          <li class="nav-item"><a href="#" role="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu list-inline ">
+              <li class="list-inline-item"><a href="#" class="dropdown-item">1</a></li>
+              <div class="vr"></div>
+              <li class="list-inline-item"><a href="#" class="dropdown-item">2</a></li>
+              <li class="list-inline-item"><a href="#" class="dropdown-item">3</a></li>
+              <li class="list-inline-item"><a href="#" class="dropdown-item">4</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-      <!-- ?row ends -->
+      <!--?col ends-->
     </div>
-    <!--?container ends-->
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  </body>
+    <!-- ?row ends -->
+  </div>
+  <!--?container ends-->
+
+  <div class="container">
+    <div class="row mt-1 row-cols-1 gy-5">
+      <div class="col">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button type="button" class="nav-link active" id="Thome" data-bs-toggle="tab" data-bs-target="#home" role="tab"
+              aria-controls="home" aria-selected="true"> Home</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button type="button" class="nav-link " id="Tprofile" data-bs-toggle="tab" data-bs-target="#profile"
+              role="tab" aria-controls="profile" aria-selected="false"> Profile</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button type="button" class="nav-link " id="Tcontact" data-bs-toggle="tab" data-bs-target="#contact"
+              role="tab" aria-controls="contact" aria-selected="false"> Contact</button>
+          </li>
+        </ul>
+        <div class="tab-content mt-4">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="Thome">
+            <h3 class="display-6">Home</h3>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sed tempore placeat cum
+              ab cumque cupiditate quisquam reiciendis, consequuntur quaerat. Nesciunt odit odio expedita ullam. Et
+              voluptatem eveniet perspiciatis fugiat?
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, placeat accusamus? Expedita consequuntur
+              deserunt quam aperiam, iste necessitatibus? Et, tempore?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, qui. Doloremque at placeat enim fugiat,
+              recusandae quo nulla dolorum porro quibusdam eaque, eos deleniti! Minima error quibusdam officia rem
+              adipisci.
+            </p>
+          </div>   
+          
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="Tprofile">
+            <h3 class="display-6">Profile</h3>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sed tempore placeat cum
+              ab cumque cupiditate quisquam reiciendis, consequuntur quaerat. Nesciunt odit odio expedita ullam. Et
+              voluptatem eveniet perspiciatis fugiat?
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, placeat accusamus? Expedita consequuntur
+              deserunt quam aperiam, iste necessitatibus? Et, tempore?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, qui. Doloremque at placeat enim fugiat,
+              recusandae quo nulla dolorum porro quibusdam eaque, eos deleniti! Minima error quibusdam officia rem
+              adipisci.
+            </p>
+          </div> 
+
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="Tcontact">
+            <h3 class="display-6">Contact</h3>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sed tempore placeat cum
+              ab cumque cupiditate quisquam reiciendis, consequuntur quaerat. Nesciunt odit odio expedita ullam. Et
+              voluptatem eveniet perspiciatis fugiat?
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, placeat accusamus? Expedita consequuntur
+              deserunt quam aperiam, iste necessitatibus? Et, tempore?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, qui. Doloremque at placeat enim fugiat,
+              recusandae quo nulla dolorum porro quibusdam eaque, eos deleniti! Minima error quibusdam officia rem
+              adipisci.
+            </p>
+          </div> 
+        </div>
+        <!-- ?tab-content end -->
+      </div>
+      <!-- ?col ends -->
+
+      <div class="col">
+
+      </div>
+      <!-- ?col ends -->
+    </div>
+    <!-- ?row-ends -->
+  </div>
+  <!-- ?container ends -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
