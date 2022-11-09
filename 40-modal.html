@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap modals</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row mt-1">
+        <div class="col">
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal">Exit</button>
+          <div class="modal fade" tabindex="-1" id="myModal" aria-labelledby="ExitLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="ExitLabel">Process Info</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    <button type="button" class="btn btn-warning" title="popover" data-bs-toggle="popover" data-bs-content="This area has popover content">Click me</button>
+                  </p>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Abort</button>
+                  <button type="button" class="btn btn-success">Accept</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!--?col ends-->
+      </div><!--?row ends-->
+    </div><!--?container ends-->
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script>
+      // let myModal = new bootstrap.Modal(document.querySelector("#myModal"));
+      // myModal.show();
+
+      let myElement = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+      var myList = myElement.map(function(x){
+        return new bootstrap.Popover(x)
+      });
+    </script>
+
+
+  </body>
+</html>
