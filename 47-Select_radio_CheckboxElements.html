@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Select radio checkbox elements</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col">
+          <form>
+            <div class="mb-3 row">
+              <label for="myEmail" class="form-label col-sm-2 col-xl-1">E-mail address</label>
+              <div class="col-sm-10 col-xl-11">
+                <input type="email" class="form-control-plaintext" id="myEmail" aria-describedby="emailHelper" placeholder="Enter your e-mail adress" aria-label="e-mail input box" >
+              </div>
+              
+            </div>
+            <div class="mb-3 row">
+              <label for="myPassword" class="form-label col-sm-2 col-xl-1">Your Password</label>
+              <div class="col-sm-10 col-xl-11">
+                <input type="password" class="form-control" id="myPassword" aria-describedby="passwordHelper" placeholder="Your Password">
+                <div id="passwordHelper" class="form-text">
+                  Your password must be 8-20 character lenght, have Upper, lower characters and numbers...
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="mb-3 row">
+              <label for="myGender" class="form-label col-sm-2 col-xl-1">Chose your sex</label>
+              <div class="col-sm-10 col-xl-11">
+                <select class="form-select" id="myGender" aria-label="Opening select box">
+                  <option selected>Choose your Sex</option>
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mb-3 row">
+              <div class="offset-sm-2">
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="yesorno" id="myRadio1">
+                  <label for="myRadio1" class="form-check-label">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="yesorno" id="myRadio2">
+                  <label for="myRadio2" class="form-check-label">No</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3 row">
+              <div class="offset-sm-2">
+                <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" role="switch" id="mySwitch">
+                  <label for="mySwitch" class="form-check-label">Dark mode / Light mode</label>
+                </div>
+              
+              </div>
+            </div>
+
+            <div class="mb-3 row">
+              <label for="myArea" class="form-label col-sm-2 col-xl-1">Explanation</label>
+              <div class="col-sm-10 col-xl-11">
+                <textarea class="form-control col-sm-10 col-xl-11" id="myArea" rows="4"></textarea>
+              </div>
+              
+            </div>
+
+            <div class="mb-3 row">
+              <label for="myFile" class="form-label col-sm-2 col-xl-1">Upload a file</label>
+              <div class="col-sm-10 col-xl-11">
+                <input type="file" class="form-control form-control-lg" id="myFile">
+              </div>
+            </div>
+
+            <div class="mb-3 row">
+              <label class="form-label col-sm-2 col-xl-1" for="myDatalist">Choose city</label>
+              <div class="col-sm-10 col-xl-11">
+                <input placeholder="Search Data.." class="form-control" id="myDatalist" list="dataOptions" >
+                <datalist id="dataOptions">
+                  <option value="Madrid">
+                  <option value="Paris">
+                  <option value="London">
+                  <option value="Istanbul">
+                  <option value="Ankara">
+                  <option value="Berlin">
+                </datalist>
+              </div>
+            </div>
+
+            <div class="mb-3 row">
+              <label for="myColor" class="form-label col-sm-2 col-xl-1">Pick a color</label>
+              <div class="col-sm-10 col-xl-11">
+                <input type="color" id="myColor" class="form-control form-control-color" title="Pick your color">
+              </div>
+            </div>
+
+            <div class="mb-3 row form-check">
+              <div class="offset-sm-2 offset-xl-1">
+                <input type="checkbox" class="form-check-input col-sm-2 col-xl-1" id="remember">
+                <label for="remember" class="form-check-label col-sm-10 col-xl-11">Remember me</label>
+              </div>
+              
+            </div>
+            <button type="button" class="btn btn-success">Sign in</button>
+
+          </form>
+        </div> 
+        <!--?col ends-->
+      </div>
+      <!--?row ends-->
+    </div>
+    <!--?container ends-->
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
